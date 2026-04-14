@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-pixel: "Press Start 2P", cursive;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f5f6f8] text-slate-900;
+  }
+}
+
+@layer utilities {
+  .pixel-shadow {
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pixel-border {
+    box-shadow: 
+      0 -4px 0 0 #0d59f2,
+      0 4px 0 0 #0d59f2,
+      -4px 0 0 0 #0d59f2,
+      4px 0 0 0 #0d59f2;
+  }
+
+  .pixelated {
+    image-rendering: pixelated;
+  }
+}
